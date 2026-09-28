@@ -6,7 +6,7 @@ public class Main {
         String [] cities = {"Cape Town","Port Elizabeth","Pretoria"};
         int [][] sales = {{1000,2000,3000}, {2000,3000,4000},{1500,1100,1200}};
 
-        // Header Output
+
         System.out.println("------------------------------------------------------------");
         System.out.println("GAMING CONSOLE REPORT");
         System.out.println("------------------------------------------------------------");
@@ -34,7 +34,7 @@ public class Main {
         int maxSales = -1;
         String topCity = "";
 
-        // Calculate and display city totals
+        // Calculating and displaying city totals
         for (int city = 0; city < cities.length; city++) {
             int cityTotal = 0;
             for (int sale = 0; sale < sales[city].length; sale++) {
@@ -49,7 +49,8 @@ public class Main {
             }
         }
 
-        System.out.println("------------------------------------------------------------");
+        System.out.println();
+
         System.out.println("CITY WITH THE MOST SALES: " + topCity);
         System.out.println("------------------------------------------------------------");
     }
