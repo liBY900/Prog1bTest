@@ -6,21 +6,24 @@ public class Main {
         String [] cities = {"Cape Town","Port Elizabeth","Pretoria"};
         int [][] sales = {{1000,2000,3000}, {2000,3000,4000},{1500,1100,1200}};
 
-
+        // HEADER
         System.out.println("------------------------------------------------------------");
         System.out.println("GAMING CONSOLE REPORT");
         System.out.println("------------------------------------------------------------");
 
         System.out.printf("%-20s","");
 
+        // OUTPUT FOR CONSOLES
         for (int con = 0 ;con < consoles.length;con++){
             System.out.printf("%-15s",consoles[con]);
         }
         System.out.println();
 
+        // OUTPUT FOR CITIES
         for (int city=0; city< cities.length;city++){
             System.out.printf("%-20s",cities[city]);
 
+            // OUTPUT FOR SALES
             for (int sale=0;sale<sales.length;sale++){
                 System.out.printf("%-15s",sales[city][sale]);
             }
@@ -34,7 +37,7 @@ public class Main {
         int maxSales = -1;
         String topCity = "";
 
-        // Calculating and displaying city totals
+        // CALCULATING AND DISPLAYING CITY TOTALS
         for (int city = 0; city < cities.length; city++) {
             int cityTotal = 0;
             for (int sale = 0; sale < sales[city].length; sale++) {
