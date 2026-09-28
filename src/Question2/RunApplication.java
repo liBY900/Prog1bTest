@@ -10,6 +10,7 @@ public class RunApplication {
         System.out.println("1) PS5");
         System.out.println("2) XBOX");
         System.out.println("3) SWITCH");
+        System.out.println();
 
         int choice = scanner.nextInt();
         scanner.nextLine();
